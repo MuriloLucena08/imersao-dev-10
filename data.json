@@ -1,0 +1,72 @@
+[
+  {
+    "nome": "Javascript",
+    "descricao": "O JS é a linguagem da web, essencial para desenvolvimento front-end e cada vez mais popular no back-end com Node.js.",
+    "ano": 1995,
+    "link": "https://developer.mozilla.org/pt-BR/docs/Web/Javascript",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+  },
+  {
+    "nome": "Python",
+    "descricao": "Linguagem versátil, conhecida pela sua sintaxe limpa. Muito usada em ciência de dados, IA, desenvolvimento web e automação.",
+    "ano": 1991,
+    "link": "https://docs.python.org/pt-br/3.14",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+  },
+  {
+    "nome": "Java",
+    "descricao": "Linguagem orientada a objetos, robusta e independente de plataforma, amplamente utilizada em sistemas empresariais e aplicativos Android.",
+    "ano": 1995,
+    "link": "https://www.java.com/pt-BR/",
+    "imagem": "https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg"
+  },
+  {
+    "nome": "C#",
+    "descricao": "Criada pela Microsoft, é uma linguagem moderna e orientada a objetos para o ecossistema .NET, usada em jogos, web e aplicações Windows.",
+    "ano": 2000,
+    "link": "https://docs.microsoft.com/pt-br/dotnet/csharp/",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Logo_C_sharp.svg"
+  },
+  {
+    "nome": "PHP",
+    "descricao": "Linguagem de script do lado do servidor muito popular para desenvolvimento web, sendo a base de sistemas como WordPress.",
+    "ano": 1995,
+    "link": "https://www.php.net/",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+  },
+  {
+    "nome": "TypeScript",
+    "descricao": "Um superset do JavaScript que adiciona tipagem estática, aumentando a robustez e a manutenibilidade de grandes projetos.",
+    "ano": 2012,
+    "link": "https://www.typescriptlang.org/",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
+  },
+  {
+    "nome": "Go",
+    "descricao": "Criada pelo Google, é conhecida pela simplicidade e alto desempenho, ideal para serviços de backend e programação concorrente.",
+    "ano": 2009,
+    "link": "https://go.dev/",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/0/05/Go_Logo_Blue.svg"
+  },
+  {
+    "nome": "Rust",
+    "descricao": "Focada em segurança de memória e desempenho, é ideal para programação de sistemas, prevenindo falhas comuns em C/C++.",
+    "ano": 2010,
+    "link": "https://www.rust-lang.org/pt-BR",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg"
+  },
+  {
+    "nome": "Kotlin",
+    "descricao": "Linguagem moderna que roda na JVM. É a linguagem preferida do Google para desenvolvimento nativo de aplicativos Android.",
+    "ano": 2011,
+    "link": "https://kotlinlang.org/",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/7/74/Kotlin_Icon.png"
+  },
+  {
+    "nome": "Swift",
+    "descricao": "Criada pela Apple para desenvolver aplicativos para iOS, macOS e outros de seus sistemas. É uma linguagem poderosa e intuitiva.",
+    "ano": 2014,
+    "link": "https://developer.apple.com/swift/",
+    "imagem": "https://developer.apple.com/assets/elements/icons/swift/swift-64x64_2x.png"
+  }
+]
