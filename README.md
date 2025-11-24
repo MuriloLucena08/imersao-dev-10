@@ -7,6 +7,7 @@ Este projeto é uma página web interativa que funciona como uma "Base de Conhec
 - **Animação de Introdução:** Ao abrir a página, o usuário é recebido com uma animação de "Chuva Digital" (Matrix Digital Rain) que dura 3 segundos antes de revelar o conteúdo principal.
 - **Visualização em Cards:** As linguagens de programação são exibidas em um layout de cards, cada um contendo nome, imagem, ano de criação, descrição e um link para saber mais.
 - **Busca Dinâmica:** O usuário pode digitar o nome de uma linguagem na barra de busca e pressionar "Enter" ou clicar no botão "Buscar" para filtrar os resultados.
+- **Busca em Tempo Real (Autocomplete):** A busca é feita instantaneamente enquanto o usuário digita. A lista de resultados é filtrada a cada letra, mostrando apenas as tecnologias que começam com o texto inserido.
 - **Carregamento de Dados Externo:** As informações sobre as linguagens são carregadas de forma assíncrona a partir de um arquivo `data.json`, tornando a manutenção e adição de novos conteúdos mais fácil.
 - **Design Responsivo:** A interface se adapta a diferentes tamanhos de tela, de desktops a dispositivos móveis.
 - **Código Modular:** O JavaScript é organizado em módulos, separando a lógica da animação da lógica principal da aplicação para maior organização e manutenibilidade.
@@ -51,9 +52,10 @@ base_de_conhecimento/
 2.  **Animação de Intro:** A função `main()` no `script.js` chama `startMatrixIntro()` do módulo de animação. A tela é preenchida com a animação "Digital Rain".
 3.  **Transição:** Após 3 segundos, a animação é interrompida (para economizar recursos do navegador) e o canvas desaparece com um efeito de fade-out. A `Promise` da animação é resolvida.
 4.  **Carregamento de Conteúdo:** Usando `await`, o script espera a `Promise` ser resolvida e só então chama a função `carregarDados()`.
-5.  **Renderização:** `carregarDados()` lê o `data.json`, cria o HTML para cada card de linguagem e insere todo o conteúdo de uma só vez no `main` da página.
-6.  **Interação do Usuário:** O usuário pode agora ver todos os cards ou usar a barra de busca para encontrar uma linguagem específica. O script filtra os dados já carregados e atualiza a tela com os resultados.
+5.  **Carregamento em Memória:** `carregarDados()` lê o `data.json` e armazena as informações, mas a tela inicial permanece vazia.
+6.  **Interação do Usuário:** O usuário começa a digitar no campo de busca. A cada letra, o script filtra os dados em tempo real e exibe apenas os cards correspondentes. Se o usuário digitar "todas", a lista completa é exibida.
 
 ---
 
 _Projeto desenvolvido como parte de estudos em desenvolvimento web front-end._
+
