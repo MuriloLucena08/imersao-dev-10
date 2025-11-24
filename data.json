@@ -1,72 +1,323 @@
 [
   {
-    "nome": "Javascript",
-    "descricao": "O JS é a linguagem da web, essencial para desenvolvimento front-end e cada vez mais popular no back-end com Node.js.",
-    "ano": 1995,
-    "link": "https://developer.mozilla.org/pt-BR/docs/Web/Javascript",
-    "imagem": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
-  },
-  {
-    "nome": "Python",
-    "descricao": "Linguagem versátil, conhecida pela sua sintaxe limpa. Muito usada em ciência de dados, IA, desenvolvimento web e automação.",
-    "ano": 1991,
-    "link": "https://docs.python.org/pt-br/3.14",
-    "imagem": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
-  },
-  {
-    "nome": "Java",
-    "descricao": "Linguagem orientada a objetos, robusta e independente de plataforma, amplamente utilizada em sistemas empresariais e aplicativos Android.",
-    "ano": 1995,
-    "link": "https://www.java.com/pt-BR/",
-    "imagem": "https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg"
-  },
-  {
-    "nome": "C#",
-    "descricao": "Criada pela Microsoft, é uma linguagem moderna e orientada a objetos para o ecossistema .NET, usada em jogos, web e aplicações Windows.",
-    "ano": 2000,
-    "link": "https://docs.microsoft.com/pt-br/dotnet/csharp/",
-    "imagem": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Logo_C_sharp.svg"
-  },
-  {
-    "nome": "PHP",
-    "descricao": "Linguagem de script do lado do servidor muito popular para desenvolvimento web, sendo a base de sistemas como WordPress.",
-    "ano": 1995,
-    "link": "https://www.php.net/",
-    "imagem": "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
-  },
-  {
-    "nome": "TypeScript",
-    "descricao": "Um superset do JavaScript que adiciona tipagem estática, aumentando a robustez e a manutenibilidade de grandes projetos.",
-    "ano": 2012,
-    "link": "https://www.typescriptlang.org/",
-    "imagem": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
-  },
-  {
     "nome": "Go",
-    "descricao": "Criada pelo Google, é conhecida pela simplicidade e alto desempenho, ideal para serviços de backend e programação concorrente.",
-    "ano": 2009,
-    "link": "https://go.dev/",
-    "imagem": "https://upload.wikimedia.org/wikipedia/commons/0/05/Go_Logo_Blue.svg"
-  },
-  {
-    "nome": "Rust",
-    "descricao": "Focada em segurança de memória e desempenho, é ideal para programação de sistemas, prevenindo falhas comuns em C/C++.",
-    "ano": 2010,
-    "link": "https://www.rust-lang.org/pt-BR",
-    "imagem": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg"
+    "descricao": "Linguagem de programação compilada, de código aberto, projetada para construir software simples, confiável e eficiente.",
+    "ano": "2009",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/0/05/Go_Logo_Blue.svg",
+    "link": "https://golang.org/",
+    "tags": ["linguagem de programação", "backend", "concorrência", "sistemas"]
   },
   {
     "nome": "Kotlin",
-    "descricao": "Linguagem moderna que roda na JVM. É a linguagem preferida do Google para desenvolvimento nativo de aplicativos Android.",
-    "ano": 2011,
+    "descricao": "Linguagem de programação moderna, estaticamente tipada, que compila para a JVM, ideal para desenvolvimento Android e back-end.",
+    "ano": "2011",
+    "imagem": "https://cdn.worldvectorlogo.com/logos/kotlin-1.svg",
     "link": "https://kotlinlang.org/",
-    "imagem": "https://upload.wikimedia.org/wikipedia/commons/7/74/Kotlin_Icon.png"
+    "tags": ["linguagem de programação", "android", "jvm", "backend"]
+  },
+  {
+    "nome": "TypeScript",
+    "descricao": "Superset do JavaScript que adiciona tipagem estática opcional, melhorando a escalabilidade e manutenção do código.",
+    "ano": "2012",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
+    "link": "https://www.typescriptlang.org/",
+    "tags": ["linguagem de programação", "frontend", "backend", "compilador"]
+  },
+  {
+    "nome": "Rust",
+    "descricao": "Linguagem de programação de sistemas que se concentra em segurança, especialmente concorrência segura e gerenciamento de memória.",
+    "ano": "2010",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg",
+    "link": "https://www.rust-lang.org/",
+    "tags": ["linguagem de programação", "sistemas", "performance", "segurança"]
   },
   {
     "nome": "Swift",
-    "descricao": "Criada pela Apple para desenvolver aplicativos para iOS, macOS e outros de seus sistemas. É uma linguagem poderosa e intuitiva.",
-    "ano": 2014,
-    "link": "https://developer.apple.com/swift/",
-    "imagem": "https://developer.apple.com/assets/elements/icons/swift/swift-64x64_2x.png"
+    "descricao": "Linguagem de programação poderosa e intuitiva criada pela Apple para desenvolver apps para iOS, macOS, watchOS e tvOS.",
+    "ano": "2014",
+    "imagem": "https://cdn.worldvectorlogo.com/logos/swift-15.svg",
+    "link": "https://www.swift.org/",
+    "tags": ["linguagem de programação", "mobile", "ios", "apple"]
+  },
+  {
+    "nome": "PHP",
+    "descricao": "Linguagem de script de uso geral amplamente utilizada, especialmente adequada para desenvolvimento web.",
+    "ano": "1995",
+    "imagem": "https://www.svgrepo.com/show/452088/php.svg",
+    "link": "https://www.php.net/",
+    "tags": [
+      "linguagem de programação",
+      "backend",
+      "web development",
+      "servidor"
+    ]
+  },
+  {
+    "nome": "React",
+    "descricao": "Biblioteca front-end declarativa, eficiente e flexível para a criação de interfaces de usuário baseadas em componentes.",
+    "ano": "2013",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+    "link": "https://reactjs.org/",
+    "tags": ["biblioteca", "frontend", "ui", "componentes"]
+  },
+  {
+    "nome": "Vue.js",
+    "descricao": "Framework progressivo para a construção de interfaces de usuário, conhecido por sua facilidade de aprendizado e integração.",
+    "ano": "2014",
+    "imagem": "https://www.svgrepo.com/show/452130/vue.svg",
+    "link": "https://vuejs.org/",
+    "tags": ["framework", "frontend", "spa", "reatividade"]
+  },
+  {
+    "nome": "Angular",
+    "descricao": "Framework de desenvolvimento front-end completo e robusto, mantido pelo Google, ideal para aplicações de grande escala.",
+    "ano": "2016",
+    "imagem": "https://www.svgrepo.com/show/353396/angular-icon.svg",
+    "link": "https://angular.io/",
+    "tags": ["framework", "frontend", "typescript", "mvc"]
+  },
+  {
+    "nome": "Svelte",
+    "descricao": "Compilador que converte componentes em código JavaScript altamente eficiente em tempo de build, eliminando o DOM virtual.",
+    "ano": "2016",
+    "imagem": "https://www.svgrepo.com/show/374109/svelte.svg",
+    "link": "https://svelte.dev/",
+    "tags": ["framework", "compilador", "frontend", "performance"]
+  },
+  {
+    "nome": "Node.js",
+    "descricao": "Ambiente de execução open-source e cross-platform que permite executar código JavaScript fora do navegador.",
+    "ano": "2009",
+    "imagem": "https://www.svgrepo.com/show/452075/node-js.svg",
+    "link": "https://nodejs.org/",
+    "tags": ["ambiente de execução", "backend", "javascript", "assíncrono"]
+  },
+  {
+    "nome": "Docker",
+    "descricao": "Plataforma para desenvolver, enviar e executar aplicações dentro de contêineres, garantindo ambientes isolados e consistentes.",
+    "ano": "2013",
+    "imagem": "https://www.svgrepo.com/show/452192/docker.svg",
+    "link": "https://www.docker.com/",
+    "tags": ["containerização", "devops", "virtualização", "ferramenta"]
+  },
+  {
+    "nome": "Kubernetes",
+    "descricao": "Sistema open-source para automatizar a implantação, escalonamento e gerenciamento de aplicações em contêineres.",
+    "ano": "2014",
+    "imagem": "https://www.svgrepo.com/show/373724/kubernetes.svg",
+    "link": "https://kubernetes.io/",
+    "tags": ["orquestração", "devops", "cloud native", "automação"]
+  },
+  {
+    "nome": "Terraform",
+    "descricao": "Ferramenta de Infraestrutura como Código (IaC) que permite provisionar e gerenciar recursos de infraestrutura de forma declarativa.",
+    "ano": "2014",
+    "imagem": "https://www.svgrepo.com/show/374122/terraform.svg",
+    "link": "https://www.terraform.io/",
+    "tags": ["iac", "devops", "cloud", "provisionamento"]
+  },
+  {
+    "nome": "PostgreSQL",
+    "descricao": "Poderoso sistema de gerenciamento de banco de dados relacional open source, conhecido por sua robustez e conformidade com padrões.",
+    "ano": "1996",
+    "imagem": "https://cdn.worldvectorlogo.com/logos/postgresql.svg",
+    "link": "https://www.postgresql.org/",
+    "tags": ["banco de dados", "relacional", "sql", "open source"]
+  },
+  {
+    "nome": "MongoDB",
+    "descricao": "Banco de dados NoSQL orientado a documentos, projetado para alta disponibilidade, escalabilidade e flexibilidade.",
+    "ano": "2009",
+    "imagem": "https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_original_wordmark_logo_icon_146425.png",
+    "link": "https://www.mongodb.com/",
+    "tags": ["banco de dados", "nosql", "documento", "distribuído"]
+  },
+  {
+    "nome": "Redis",
+    "descricao": "Estrutura de dados em memória, usada como cache, banco de dados e message broker, conhecida por sua alta velocidade.",
+    "ano": "2009",
+    "imagem": "https://cdn.worldvectorlogo.com/logos/redis.svg",
+    "link": "https://redis.io/",
+    "tags": ["cache", "banco de dados", "nosql", "in-memory"]
+  },
+  {
+    "nome": "Kafka",
+    "descricao": "Plataforma de streaming de eventos distribuída de alto desempenho, usada para construir pipelines de dados em tempo real.",
+    "ano": "2011",
+    "imagem": "https://www.svgrepo.com/show/353443/apache-kafka.svg",
+    "link": "https://kafka.apache.org/",
+    "tags": ["streaming", "mensageria", "big data", "distribuído"]
+  },
+  {
+    "nome": "GraphQL",
+    "descricao": "Linguagem de consulta e tempo de execução do lado do servidor para APIs, permitindo que os clientes solicitem exatamente os dados de que precisam.",
+    "ano": "2015",
+    "imagem": "https://www.svgrepo.com/show/373644/graphql.svg",
+    "link": "https://graphql.org/",
+    "tags": ["api", "protocolo", "dados", "backend"]
+  },
+  {
+    "nome": "Next.js",
+    "descricao": "Framework de React que permite renderização do lado do servidor (SSR), geração de site estático (SSG) e outras funcionalidades de produção.",
+    "ano": "2016",
+    "imagem": "https://cdn.worldvectorlogo.com/logos/next-js.svg",
+    "link": "https://nextjs.org/",
+    "tags": ["framework", "react", "frontend", "ssr"]
+  },
+  {
+    "nome": "Spring Boot",
+    "descricao": "Framework que simplifica a criação de aplicações Spring autossuficientes, prontas para produção e baseadas em microserviços.",
+    "ano": "2014",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/7/79/Spring_Boot.svg",
+    "link": "https://spring.io/projects/spring-boot",
+    "tags": ["framework", "backend", "microserviços", "jvm"]
+  },
+  {
+    "nome": "NestJS",
+    "descricao": "Framework progressivo para Node.js, construído com TypeScript, que ajuda a construir aplicativos eficientes e escaláveis do lado do servidor.",
+    "ano": "2017",
+    "imagem": "https://www.svgrepo.com/show/373872/nestjs.svg",
+    "link": "https://nestjs.com/",
+    "tags": ["framework", "backend", "typescript", "node.js"]
+  },
+  {
+    "nome": "AWS Lambda",
+    "descricao": "Serviço de computação serverless da Amazon Web Services que executa código em resposta a eventos sem provisionar ou gerenciar servidores.",
+    "ano": "2014",
+    "imagem": "https://cdn.worldvectorlogo.com/logos/aws-lambda.svg",
+    "link": "https://aws.amazon.com/lambda/",
+    "tags": ["serverless", "cloud computing", "faas", "aws"]
+  },
+  {
+    "nome": "Git",
+    "descricao": "Sistema de controle de versão distribuído, gratuito e open source, projetado para lidar com projetos de todos os tamanhos com velocidade e eficiência.",
+    "ano": "2005",
+    "imagem": "https://www.svgrepo.com/show/452210/git.svg",
+    "link": "https://git-scm.com/",
+    "tags": [
+      "controle de versão",
+      "ferramenta",
+      "colaboração",
+      "desenvolvimento"
+    ]
+  },
+  {
+    "nome": "Jest",
+    "descricao": "Framework de testes em JavaScript com foco em simplicidade, usado primariamente para testar código front-end (React, Vue) e back-end (Node.js).",
+    "ano": "2014",
+    "imagem": "https://www.svgrepo.com/show/373701/jest.svg",
+    "link": "https://jestjs.io/",
+    "tags": ["teste", "javascript", "framework", "qualidade de software"]
+  },
+  {
+    "nome": "C#",
+    "descricao": "Linguagem de programação moderna, orientada a objetos e fortemente tipada, desenvolvida pela Microsoft como parte da plataforma .NET.",
+    "ano": "2000",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Logo_C_sharp.svg",
+    "link": "https://docs.microsoft.com/en-us/dotnet/csharp/",
+    "tags": ["linguagem de programação", "backend", ".net", "microsoft"]
+  },
+  {
+    "nome": "Dart",
+    "descricao": "Linguagem de programação otimizada para clientes para criar aplicativos rápidos em qualquer plataforma, desenvolvida pelo Google.",
+    "ano": "2011",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Dart-logo.png",
+    "link": "https://dart.dev/",
+    "tags": ["linguagem de programação", "mobile", "frontend", "google"]
+  },
+  {
+    "nome": "Flutter",
+    "descricao": "Kit de ferramentas de UI do Google para criar aplicativos nativos compilados para mobile, web e desktop a partir de uma única base de código.",
+    "ano": "2017",
+    "imagem": "https://cdn.worldvectorlogo.com/logos/flutter-logo.svg",
+    "link": "https://flutter.dev/",
+    "tags": ["framework", "mobile", "ui", "dart"]
+  },
+  {
+    "nome": "Django",
+    "descricao": "Framework web de alto nível em Python que incentiva o desenvolvimento rápido e o design limpo e pragmático.",
+    "ano": "2005",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/7/75/Django_logo.svg",
+    "link": "https://www.djangoproject.com/",
+    "tags": ["framework", "backend", "python", "web"]
+  },
+  {
+    "nome": "Ruby on Rails",
+    "descricao": "Framework de desenvolvimento web do lado do servidor escrito em Ruby, otimizado para a felicidade do programador e produtividade sustentável.",
+    "ano": "2004",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/6/62/Ruby_On_Rails_Logo.svg",
+    "link": "https://rubyonrails.org/",
+    "tags": ["framework", "backend", "ruby", "mvc"]
+  },
+  {
+    "nome": "Elixir",
+    "descricao": "Linguagem de programação dinâmica e funcional projetada para construir aplicações escaláveis e de fácil manutenção, executada na Máquina Virtual Erlang (BEAM).",
+    "ano": "2012",
+    "imagem": "https://cdn.worldvectorlogo.com/logos/elixir.svg",
+    "link": "https://elixir-lang.org/",
+    "tags": ["linguagem de programação", "funcional", "concorrência", "backend"]
+  },
+  {
+    "nome": "Scala",
+    "descricao": "Linguagem de programação que combina programação orientada a objetos e funcional em um pacote conciso e de alto nível, executada na JVM.",
+    "ano": "2004",
+    "imagem": "https://cdn.worldvectorlogo.com/logos/scala-4.svg",
+    "link": "https://www.scala-lang.org/",
+    "tags": ["linguagem de programação", "funcional", "jvm", "big data"]
+  },
+  {
+    "nome": "Haskell",
+    "descricao": "Linguagem de programação puramente funcional, estaticamente tipada, com inferência de tipos e avaliação preguiçosa (lazy evaluation).",
+    "ano": "1990",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Haskell-Logo.svg",
+    "link": "https://www.haskell.org/",
+    "tags": [
+      "linguagem de programação",
+      "funcional",
+      "acadêmico",
+      "tipagem estática"
+    ]
+  },
+  {
+    "nome": "Python",
+    "descricao": "Linguagem de programação de alto nível, interpretada, de propósito geral, conhecida por sua sintaxe clara e legibilidade.",
+    "ano": "1991",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
+    "link": "https://www.python.org/",
+    "tags": ["linguagem de programação", "backend", "data science", "automação"]
+  },
+  {
+    "nome": "JavaScript",
+    "descricao": "Linguagem de programação de alto nível que é uma das tecnologias centrais da World Wide Web, essencial para páginas web interativas.",
+    "ano": "1995",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+    "link": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript",
+    "tags": ["linguagem de programação", "frontend", "backend", "web"]
+  },
+  {
+    "nome": "Java",
+    "descricao": "Linguagem de programação orientada a objetos, de propósito geral, projetada para ter o mínimo de dependências de implementação possível.",
+    "ano": "1995",
+    "imagem": "https://www.svgrepo.com/show/452234/java.svg",
+    "link": "https://www.java.com/",
+    "tags": ["linguagem de programação", "backend", "enterprise", "jvm"]
+  },
+  {
+    "nome": "C++",
+    "descricao": "Linguagem de programação de propósito geral, compilada, multi-paradigma, comumente usada para software de sistema, jogos e aplicações de alta performance.",
+    "ano": "1985",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg",
+    "link": "https://isocpp.org/",
+    "tags": ["linguagem de programação", "sistemas", "performance", "jogos"]
+  },
+  {
+    "nome": "Ruby",
+    "descricao": "Linguagem de programação dinâmica, de código aberto, com foco na simplicidade e produtividade. Possui uma sintaxe elegante que é natural para ler e fácil de escrever.",
+    "ano": "1995",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg",
+    "link": "https://www.ruby-lang.org/",
+    "tags": ["linguagem de programação", "backend", "web", "scripting"]
   }
 ]
+
+
