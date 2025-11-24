@@ -4,6 +4,7 @@ let dados = [];
 
 const campoBusca = document.querySelector('input[type="text"]');
 const secaoCards = document.querySelector(".card-container");
+const botaoBusca = document.getElementById("botao-busca");
 
 /**
  * Função principal que inicializa a aplicação.
@@ -19,9 +20,6 @@ async function carregarDados() {
   try {
     const resposta = await fetch("data.json");
     dados = await resposta.json();
-    // Constrói todos os cards e os insere de uma só vez para melhor performance
-    const todosOsCardsHTML = dados.map(criarCardHTML).join("");
-    secaoCards.innerHTML = todosOsCardsHTML;
   } catch (error) {
     console.error("Erro ao carregar os dados:", error);
     secaoCards.innerHTML =
@@ -29,41 +27,61 @@ async function carregarDados() {
   }
 }
 
+botaoBusca.addEventListener("click", iniciarBusca);
+
+// Adiciona um "ouvinte" para a tecla Enter
 campoBusca.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
     iniciarBusca();
   }
 });
 
+// Adiciona um "ouvinte" para o evento de digitação (input)
+campoBusca.addEventListener("input", iniciarBusca);
+
+// Função central de busca, agora acionada por clique, Enter ou digitação
 function iniciarBusca() {
   const termoBusca = campoBusca.value.trim().toLowerCase();
+  const valorOriginalBusca = campoBusca.value; // Guarda o valor original para a mensagem de erro
 
+  // Limpa a seção de cards para qualquer nova busca
   secaoCards.innerHTML = "";
 
-  if (termoBusca === "") {
+  // Se a busca for pela palavra "todas", carrega todos os cards
+  if (termoBusca === "todas") {
     secaoCards.innerHTML = dados.map(criarCardHTML).join("");
+    return;
+  }
+
+  // Se a busca estiver vazia, a tela permanece em branco
+  if (termoBusca === "") {
     campoBusca.value = "";
     return;
   }
 
-  const resultado = dados.find(
-    (lang) => lang.nome.toLowerCase() === termoBusca
+  // Filtra os dados para encontrar todas as tecnologias que começam com o termo buscado
+  const resultados = dados.filter((lang) =>
+    lang.nome.toLowerCase().startsWith(termoBusca)
   );
 
-  if (resultado) {
-    const cardHTML = criarCardHTML(resultado);
-    secaoCards.innerHTML = cardHTML;
+  if (resultados.length > 0) {
+    // Se encontrou resultados, cria e exibe os cards
+    secaoCards.innerHTML = resultados.map(criarCardHTML).join("");
   } else {
-    secaoCards.innerHTML = `<p>Nenhum resultado encontrado para "${campoBusca.value}".</p>`;
+    // Se não encontrou, exibe a mensagem de erro
+    secaoCards.innerHTML = `<p>Nenhum resultado encontrado para "${valorOriginalBusca}".</p>`;
   }
-
-  campoBusca.value = "";
 }
 
 function criarCardHTML(linguagem) {
   return `
     <article class="card">
-      <img src="${linguagem.imagem}" alt="Logo da linguagem ${linguagem.nome}" class="card-image">
+      <img 
+        src="${linguagem.imagem}" 
+        alt="Logo da linguagem ${linguagem.nome}" 
+        class="card-image"
+        onerror="this.style.display='none';"
+      >
       <h2>${linguagem.nome}</h2>
       <p><strong>Ano de criação:</strong> ${linguagem.ano}</p>
       <p>${linguagem.descricao}</p>
@@ -74,3 +92,4 @@ function criarCardHTML(linguagem) {
 
 // Inicia a aplicação
 main();
+
